@@ -15,13 +15,10 @@ src/
 ---
 
 ## Composable
-- **`useConverter.js`**: Composable que contiene la lógica central de conversión de monedas.
 
----
+###  `useConverter`
 
-### Composable: `useConverter`
-
-Este `composable` encapsula toda la lógica del conversor y retorna las siguientes propiedades reactivas y funciones:
+Composable encapsula toda la lógica del conversor y retorna las siguientes propiedades reactivas y funciones:
 
 | Variable        | Tipo      | Descripción                                                                 |
 |-----------------|-----------|-----------------------------------------------------------------------------|
