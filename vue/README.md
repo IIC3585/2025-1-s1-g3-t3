@@ -57,6 +57,7 @@ Botón reutilizable que acepta un slot y ejecuta una función al hacer click.
 # Material Consultado 
 
 Vite con vue:  <https://vite.dev/guide/#scaffolding-your-first-vite-project>
+Api utilizada es la misma que utilizamos en la parte de svelte: <https://cdn.dinero.today/api/latest.json>
 
 # Vue 3 + Vite
 
