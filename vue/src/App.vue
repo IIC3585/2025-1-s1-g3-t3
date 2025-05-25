@@ -3,6 +3,8 @@ import Selection from './components/Selection.vue';
 import { useConverter } from './composable/useConverter';
 import Input from './components/Input.vue';
 import Button from './components/Button.vue';
+import { flagEmoji } from './utils/flagEmoji';
+import { getCountryCode } from './utils/getCountryCode';
 
 const {
   amount,
@@ -34,8 +36,23 @@ const {
     </div>
 
     <div v-if="result !== null" class="result">
-      <p>{{ amount }} {{ fromCurrency }} = <strong>{{ result }}</strong> {{ toCurrency }}</p>
+      <p>
+        <!-- bandera + monto origen -->
+        <span class="flag">
+          {{ flagEmoji(getCountryCode(fromCurrency)) }}
+        </span>
+        {{ amount }} {{ fromCurrency }}
+
+        =
+
+        <!-- bandera + monto destino -->
+        <span class="flag">
+          {{ flagEmoji(getCountryCode(toCurrency)) }}
+        </span>
+        <strong>{{ result }}</strong> {{ toCurrency }}
+      </p>
     </div>
+
   </div>
 </template>
 
@@ -48,5 +65,9 @@ const {
   margin-top: 1.5rem;
   font-size: 1.2rem;
   text-align: center;
+}
+.flag {
+  font-size: 1.4rem;
+  margin: 0 0.25rem 0 0.5rem;
 }
 </style>
