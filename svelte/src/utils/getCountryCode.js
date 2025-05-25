@@ -4,12 +4,13 @@ const EXCEPTIONS = {
     XAG: 'XAG',
     XPT: 'XPT',
     XPD: 'XPD',
-    // BTC/ETH/etc: podrías retornar "💲" o dejar la abreviatura
     BTC: 'BT',
     ETH: 'ET',
+    ANG: 'CW', // Netherlands Antilles Guilder, se usa en Curazao y Sint Maarten
 }
   
 export function getCountryCode(currency) {
+    if (typeof currency !== 'string') return '';
     if (EXCEPTIONS[currency]) return EXCEPTIONS[currency];
     return currency.slice(0,2);
 }
