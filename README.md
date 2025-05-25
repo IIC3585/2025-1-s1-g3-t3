@@ -13,3 +13,8 @@
 - https://uiverse.io/adamgiebl/ordinary-impala-4 : estilo botón
 - https://uiverse.io/kennyotsu-monochromia/spotty-cheetah-65 : estilo fondo
 - https://uiverse.io/ariba_9087/slimy-newt-42: estilo fondo
+
+## Deploy
+Para el deploy de ambas páginas se usó Vercel:  
+[Svelte](https://2025-1-s1-g3-t3.vercel.app/)  
+[Vue](https://2025-1-s1-g3-t3-26kv.vercel.app/)
