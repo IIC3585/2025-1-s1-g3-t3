@@ -1,4 +1,12 @@
-# Documentación general
+# Documentación con Vue
+
+## Para correr el proyecto local
+
+```bash
+npm install
+npm run dev
+```
+---
 
 ## Estructura del proyecto
 
