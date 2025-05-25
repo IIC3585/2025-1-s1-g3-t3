@@ -44,7 +44,7 @@
     </div>
     
     <Results/>
-    <InvertButton/>
+    <InvertButton convert={convert}/>
     <ResetButton/>
 
 </div>
@@ -59,7 +59,7 @@
     }
 
     .form-container {
-        margin-top: 1px;
+        margin: 1px;
         /* background-color: lightgray; */
         /* border: 2px solid hsl(345deg 100% 47%) !important;
         border-radius: 20px; */

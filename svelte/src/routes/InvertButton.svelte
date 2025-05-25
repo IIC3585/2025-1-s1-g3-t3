@@ -1,13 +1,21 @@
 <script>
     import { converted_money, input_money, old_moneda, new_moneda} from "./data";
+    export let convert;
 
     function invertData(){
-        let temp = $converted_money
-        $converted_money = $input_money;
-        $input_money = temp;
+        // let temp = $converted_money
+        // $converted_money = $input_money;
+        // $input_money = temp;
+        // let temp_moneda = $old_moneda;
+        // $old_moneda = $new_moneda;
+        // $new_moneda = temp_moneda;
+        $converted_money = null;
         let temp_moneda = $old_moneda;
         $old_moneda = $new_moneda;
         $new_moneda = temp_moneda;
+        if ($input_money && $old_moneda && $new_moneda) {
+            convert();
+        }
     }
 </script>
 
