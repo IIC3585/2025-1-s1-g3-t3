@@ -10,4 +10,25 @@ Para el deploy de ambas páginas se usó Vercel y se pueden visitar en los sigui
 - Svelte: <https://2025-1-s1-g3-t3.vercel.app/>  
 - Vue: <https://2025-1-s1-g3-t3-26kv.vercel.app/>
 
+## API
+Para el uso de la API de conversión de moneda, hay que hacer un `fetch` a la siguiente dirección: `https://cdn.dinero.today/api/latest.json`
 
+Esto devolvera lo siguiente:
+```
+{
+    "base": "USD",
+    "rates": {
+        "AED": 3.67297,
+        "AFN": 89.647021,
+        "ALL": 104.709024,
+        "AMD": 476.665393,
+        "ANG": 1.789593,
+        "AOA": 597.455,
+        "ARS": 99.2347,
+        "AUD": 1.338279,
+        [supporting 183+ currencies ...]
+    },
+}
+
+```
+Source: https://dinero.today/pages/api
