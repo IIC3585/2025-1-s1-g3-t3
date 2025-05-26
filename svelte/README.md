@@ -76,7 +76,6 @@ Componente `<button>` la cual ejecuta la función `invertData()` `onclick`. Dich
 
 ### `ResetButton.svelte`
 Componente `<button>` la cual ejecuta la función `resetData()` `onclick`, que cambia todas las variables a `null`.
----
 # Referencias:
 - https://www.youtube.com/watch?v=8DQailPy3q8&t=83s : tutorial sobre como iniciar un proyecto usando svelte.
 - https://dinero.today/pages/api : API para el cambio de moneda.
